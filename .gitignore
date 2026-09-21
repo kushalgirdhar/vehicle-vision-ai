@@ -62,13 +62,17 @@ vehicle_database/*.sqlite3
 # Media, processed files, and temporary data
 data/uploads/
 data/processed/
+data/outputs/
 data/temp/
 *.jpg
 *.jpeg
 *.png
+*.webp
 *.mp4
 *.avi
 *.mov
+*.webm
+*.mkv
 # (Keep data directory structure tracked with .gitkeep if needed)
 !data/.gitkeep
 !data/sample_images/
@@ -84,7 +88,10 @@ data/temp/
 *.log
 logs/
 
-# Testing & Coverage
+# Testing & Linters
 .pytest_cache/
+.mypy_cache/
+.ruff_cache/
 .coverage
 htmlcov/
+

@@ -1,4 +1,8 @@
 from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
+
+from app.routes.upload import router as upload_router
+
 
 app = FastAPI(
     title="VehicleVision",
@@ -7,15 +11,14 @@ app = FastAPI(
 )
 
 
-@app.get("/")
-def root():
-    return {
-        "message": "VehicleVision is running"
-    }
+app.include_router(upload_router, prefix="/api")
 
 
-@app.get("/health")
+@app.get("/api/health")
 def health():
     return {
         "status": "healthy"
     }
+
+
+app.mount("/", StaticFiles(directory="frontend", html=True), name="frontend")
