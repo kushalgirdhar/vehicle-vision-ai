@@ -1,0 +1,90 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+myenv/
+venv/
+env/
+ENV/
+.venv/
+env.bak/
+venv.bak/
+
+# Environment variables & secrets
+.env
+.env.local
+.env.*.local
+*.env
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Databases & SQLite
+*.db
+*.sqlite
+*.sqlite3
+vehicle_database/*.db
+vehicle_database/*.sqlite3
+
+# Media, processed files, and temporary data
+data/uploads/
+data/processed/
+data/temp/
+*.jpg
+*.jpeg
+*.png
+*.mp4
+*.avi
+*.mov
+# (Keep data directory structure tracked with .gitkeep if needed)
+!data/.gitkeep
+!data/sample_images/
+
+# ML Model checkpoints / weights (large binary files)
+*.pt
+*.pth
+*.onnx
+*.weights
+*.h5
+
+# Logs
+*.log
+logs/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
